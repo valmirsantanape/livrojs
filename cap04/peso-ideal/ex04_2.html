@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu Peso Ideal</title>
+    <style>
+        img{
+            height: 50vh;
+            border-radius: 2rem;
+
+        }
+        body{
+            background-color: aqua;
+            padding: 100px;
+            width: auto;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .formulario{
+            background-color: #FAFAFA;
+            border-radius: 10px;
+            height: 50vh;
+            padding: 20px;
+            
+        }
+        @media (max-width: 1024px) {
+            body{
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: auto;
+            }
+        }
+        picture{
+            margin: 0 50px 10px 0;
+           
+        }
+    </style>
+</head>
+<body>
+    <picture >
+        <img src="peso-idelal.png" alt="">
+    </picture>
+    <div class="formulario">
+        <h1>Calcule seu peso ideal</h1>
+    
+        <form action="">
+            <p>Nome:
+                <input type="text"  id="Inome" required>
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="iMasc" required> Maculino
+                <input type="radio" name="sexo" id="iFami" required> Feminino
+            </p>
+            <p>Altura: 
+                <input type="number" min="0" step="0.01" id="Ialtura" required>
+            </p>
+
+            <input type="submit" value="Calcular Peso Ideal">
+            <input type="reset" value="Limpar formulario">
+            
+        </form>
+        <hr>
+        <h3></h3>
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
