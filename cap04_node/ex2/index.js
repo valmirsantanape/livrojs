@@ -11,8 +11,8 @@ while(valorCompra / minParcelas < 20){
 console.log(`É possivel dividir em até ${minParcelas}x`)
 let totParcelas = prompt('Informe em quantas vezes deseja dividir: ')
 
-while(totParcelas > minParcelas){
-    console.log(`WARNIG! \nO numero minimo de parcelas necessária para essa compra é de ${minParcelas} `)
+while(totParcelas > minParcelas ){
+    console.log(`WARNIG! \nO numero maximo de parcelas necessária para essa compra é ${minParcelas}`)
     totParcelas = prompt('Informe em quantas vezes deseja dividir: ')
 }
 const valorParcelas = valorCompra / totParcelas
