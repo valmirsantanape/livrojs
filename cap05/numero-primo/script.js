@@ -11,7 +11,9 @@ frm.addEventListener('submit', (e) => {
     for (let i = 1; i <= numero; i++) {
         if(numero % i === 0) {
             contDivisores++
-            if(contDivisores >= 3){
+            //Condição para verificar se o numero de divisores é maior que 2.
+            //Nesse caso o loop é forçado a parar continuando a execução do programa
+            if(contDivisores > 2){
                 break   
             }
         }
