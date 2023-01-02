@@ -12,17 +12,22 @@
         <h1>Jogo Descubra o Numero</h1>
         <form action="">
             <p>Numero:
-                <input type="number" name="numero" id="inNumero">
+                <input type="number" name="numero" id="inNumero" required autofocus>
+
+                <input type="submit" value="Apostar" id="btSubmit">
+                <input type="button" value="Jogar Novamente" id="btNovo" class="oculta">
             </p>
+            
         </form>
         <h3>Erros: 
             <span id="outResp1"></span>
         </h3>
-        <h3>
+        <h3> Acertos:
             <span id="outResp2"></span>
         </h3>
         <hr>
         <h2>Dica: É um número entre 0 e 100</h2>
+        <pre></pre>
         
     </div>
     <script src="script.js"></script>
