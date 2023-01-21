@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ODONTO.COM | Consultório</title>
 </head>
-<body>
-    <h1>Consultório Odontologico</h1>
-    <form action="">
-        <p>Paciente: 
-            <input type="text" name="" id="inNome" required>
-            <input type="submit" value="Adicionar">
-            <input type="button" id="btnUrgencia" value="Urgencia">
-            <input type="button" id="btnAtender" value="Atender">
-        </p>
-    </form>
-    <hr>
-    <h3>Em atendimento: <span></span></h3>
-    <pre></pre>
+<main class="container">
+    
+    <body>
+        <div class="form">
+            <h1>Consultório Odontologico</h1>
+            <form class="formulario">
+                Nome
+                <p >
+                    <input type="text" name="" id="inNome" required>
+                    <input type="submit" value="Adicionar" class="button">
+                </p>
+                
+                <input type="button" class="button" id="btnUrgencia" value="Urgencia">
+                <input type="button" class="button" id="btnAtender" value="Atender">
+            </form>
+        </div>
+        <section class="atendimento">
+            
+            <h3>Em atendimento: <span></span></h3>
+            <p>Fila de espera: </p>
+            <pre></pre>
+        </section>
+</main>
 
     <script src="script.js"></script>
 </body>

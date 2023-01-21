@@ -39,7 +39,7 @@ frm.btnUrgencia.addEventListener("click", () => {
 })
 
 frm.btnAtender.addEventListener('click', (e) => {
-    
+    resp.style.color = 'blue'
     if (pacientes.length == 0) {
         if(!frm.checkValidity()){
            alert("Não tem paciente na fila de espera")
