@@ -43,14 +43,15 @@ frm.btnAtender.addEventListener('click', (e) => {
     if (pacientes.length == 0) {
         if(!frm.checkValidity()){
            alert("Não tem paciente na fila de espera")
-            resp.innerText = ""
+           resp.innerText = ""
             frm.inNome.focus()
-            return 
+            
         }else{
             const emAtendimento = frm.inNome.value
             resp.innerText = emAtendimento
+            frm.inNome.value = ""
             frm.inNome.focus()
-            return
+        
         }
         
     }else{
@@ -62,6 +63,5 @@ frm.btnAtender.addEventListener('click', (e) => {
         })
         respList.innerText = lista
     }
-    e.preventDefault()
     
 })
