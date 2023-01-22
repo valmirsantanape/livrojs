@@ -12,3 +12,9 @@ for(const element of carros){
     console.log(element.modelo,element.preco)
 }
 
+carros.forEach((carro, i) => {
+    console.log("desestruturação do objeto")
+    const {modelo, preco} = carro
+    console.log(`${modelo}, ${preco}`)
+})
+
