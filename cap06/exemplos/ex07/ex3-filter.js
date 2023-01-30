@@ -10,12 +10,16 @@ const amigos = [
     {nome: "Ana", idade: 20},
     {nome: "Bruno", idade: 17},
     {nome: "Thiago", idade: 30},
-    {nome: "João", idade: 16},
+    {nome: "", idade: 16},
     {nome: "Marcos", idade: 26}
 ]
 
-const maiores = amigos.filter(aux => aux.idade >= 18)
+const amigos2 = amigos.filter(aux => aux.idade >= 18 || aux.nome.includes("B"))
 
-for( const amigo of maiores){
+for( const amigo of amigos2){
     console.log(`Nome: ${amigo.nome} - Idade: ${amigo.idade}`)
+}
+
+if(amigos2.length == 0){
+    console.log("Não há amigos que atendam essas condições")
 }
