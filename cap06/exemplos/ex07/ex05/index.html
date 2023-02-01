@@ -13,18 +13,24 @@
     </picture>
     <div class="container"> 
         <h1>Revenda Herbie</h1>   
-        <form action="">
-            <label for="modelo">
-                modelo: <input type="text" name="" id="inModelo" required>
-            </label>
-            <label for="preco">Preço:
-                <input type="text" name="" inputmode="inPreco" required>
-            </label>
-            <input type="submit" value="Adicionar">
+        <form>
+            <p>
+                modelo: <input type="text" name="" id="inModelo" required autofocus>
+            </p>
+            <p>
+                Ano: <input type="number" id="inAno" >
+            </p>
+            <p>Preço:
+                <input type="number" name="" id="inPreco" required>
+                <input type="submit" value="Adicionar">
+            </p>
+            </br>
+            <input type="button" value="Listar Todos" id="btnListar">
+            <input type="button" value="Filtrar Preço" id="btnFiltrar">
+            <input type="button" value="Simular Pormoção" id="btnSimular">
         </form>
-        <button id="btnListarTodos" class="btnListarTodos"> Listar Todos</button>
-        <button id="btnFiltrarPreco" class="btnFiltrarPreco"> Filtrar Preço</button>
-        <button id="btnSimularPromocao" class="btnSimularPromocao"> Simular Promoção</button>
+
+        <pre></pre>
 
     </div>
     
