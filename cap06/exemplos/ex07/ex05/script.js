@@ -37,12 +37,9 @@ frm.addEventListener("submit", (e) => {
 frm.btnListar.addEventListener("click", () => {
     if(carros.length == 0){
         resp.innerText = `Não existe veículos disponíveis pra venda \nAgradecemos a sua visita.  `
+        return
     }
-    else{
-        let item =  ``
-        carros.forEach((carro, i) => {
-            item = item + `${i + 1} ${carro.modelo} ${carro.preco}\n`
-        })
-        resp.innerText = item
-    }
+    const lista = carros.reduce((acumulador, carro) => acumulador + carro.modelo + " - R$" + carro.preco.toFixed(2) + "\n", " ")
+
+    resp.innerText = ` Lista de carros cadastrados\n${"-".repeat(40)}\n${lista}`
 })
